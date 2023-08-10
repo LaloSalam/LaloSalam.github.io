@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Techioneers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Assets/icofont/icofont.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <p class="note">Note: Work in Progress</p>
+    <header>
+      <div class="header_logo_and_name">
+        <a href="#" onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+          <img src="Assets/Images/Logo and name.svg" alt="" />
+        </a>
+      </div>
+      <nav class="widescreen">
+        <ul>
+          <li onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+            <a href="#">Home</a>
+          </li>
+          <li onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+            <a href="#">Blog</a>
+          </li>
+          <li onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+            <a href="#">News</a>
+          </li>
+          <li onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+            <a href="#">Reviews</a>
+          </li>
+          <li onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header_social_media_icons widescreen">
+        <a href="instagram.com" onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+          <i class="icofont-instagram"></i>
+        </a>
+        <a href="facebook.com" onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+          <i class="icofont-facebook"></i>
+        </a>
+        <a href="twitter.com" onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+          <i class="icofont-twitter"></i>
+        </a>
+      </div>
+      <div class="mobile_header_menu mobile">
+        <div class="mobile_header_icon_container">
+          <i class="material-icons">menu</i>
+        </div>
+        <div class="mobile_menu_container">
+          <ul>
+            <li>
+              <a href="#">Home <i class="material-icons"> north_east </i></a>
+            </li>
+            <li>
+              <a href="#">Blog <i class="material-icons"> north_east </i></a>
+            </li>
+            <li>
+              <a href="#">News <i class="material-icons"> north_east </i></a>
+            </li>
+            <li>
+              <a href="#">Reviews <i class="material-icons"> north_east </i></a>
+            </li>
+            <li>
+              <a href="#">About <i class="material-icons"> north_east </i></a>
+            </li>
+          </ul>
+          <hr />
+          <div class="mobile_menu_social_media_icons">
+            <a href="instagram.com">
+              <i class="icofont-instagram"></i>
+            </a>
+            <a href="facebook.com">
+              <i class="icofont-facebook"></i>
+            </a>
+            <a href="twitter.com">
+              <i class="icofont-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero_section">
+        <h1 class="hero_section_heading">
+          <span id="hero_section_heading_span" onmouseover="handleMouseOver(6)" onmouseleave="handleMouseLeave()">EXPLORING THE FRONTIERS OF TECHNOLOGY AND INNOVATION</span>
+        </h1>
+
+        <a onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()" class="hero_section_cta cta" href="#">Sign up for our newsletter</a>
+      </section>
+
+      <section class="featured_section">
+        <a href="#" class="first_featured" onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()" style="background-image: url('https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+          <div class="featured_indicator">
+            <span>Featured</span>
+            <svg class="featured_arrow" width="138" height="12" viewBox="0 0 138 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M126.667 6C126.667 8.94552 129.054 11.3333 132 11.3333C134.946 11.3333 137.333 8.94552 137.333 6C137.333 3.05448 134.946 0.666667 132 0.666667C129.054 0.666667 126.667 3.05448 126.667 6ZM0 7H132V5H0V7Z"
+                fill="var(--secondary)"
+              />
+            </svg>
+          </div>
+          <div class="featured_shadow featured_shadow_inverse"></div>
+          <div class="featured_shadow"></div>
+          <p class="featured_headline">Cutting-Edge Robotics: Engineers Develop Lifelike Humanoid with Advanced AI capabilities</p>
+        </a>
+        <a href="#" class="second_featured" onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()" style="background-image: url('https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+          <div class="featured_shadow"></div>
+          <h2 class="featured_headline_bottom">Cutting-Edge Robotics: Engineers Develop Lifelike Humanoid with Advanced AI capabilities</h2>
+        </a>
+        <a href="#" class="third_featured" onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()" style="background-image: url('https://images.pexels.com/photos/1105379/pexels-photo-1105379.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+          <div class="featured_shadow"></div>
+          <h2 class="featured_headline_bottom">Cutting-Edge Robotics: Engineers Develop Lifelike Humanoid with Advanced AI capabilities</h2>
+        </a>
+      </section>
+
+      <section class="news_section">
+        <a href="#" class="section_title" onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+          <i class="material-icons">north_east</i>
+          <span>News</span>
+        </a>
+        <div class="news_grid">
+          <div class="news_cards" href="">
+            <div class="news_card_thumbnail" style="background-image: url('https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+            <div class="news_cards_content">
+              <p class="news_cards_publishing_date">
+                Published on <span>July 12<sup>th</sup> 2023</span>
+              </p>
+              <h2 class="news_cards_headline">Quantum Computing Breakthrough: Researchers Achieve Record-Breaking Qubit Stability</h2>
+              <a class="arrowed_button cta" onmouseover="handleMouseOver(2)" onmouseleave="handleMouseLeave()">
+                <span>Read More </span>
+                <span class="material-icons">north_east</span>
+              </a>
+            </div>
+          </div>
+          <div class="news_cards" href="">
+            <div class="news_card_thumbnail" style="background-image: url('https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+            <div class="news_cards_content">
+              <p class="news_cards_publishing_date">
+                Published on <span>July 12<sup>th</sup> 2023</span>
+              </p>
+              <h2 class="news_cards_headline">Quantum Computing Breakthrough: Researchers Achieve Record-Breaking Qubit Stability</h2>
+              <a class="arrowed_button cta" onmouseover="handleMouseOver(2)" onmouseleave="handleMouseLeave()">
+                <span>Read More </span>
+                <span class="material-icons">north_east</span>
+              </a>
+            </div>
+          </div>
+          <div class="news_cards" href="">
+            <div class="news_card_thumbnail" style="background-image: url('https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+            <div class="news_cards_content">
+              <p class="news_cards_publishing_date">
+                Published on <span>July 12<sup>th</sup> 2023</span>
+              </p>
+              <h2 class="news_cards_headline">Quantum Computing Breakthrough: Researchers Achieve Record-Breaking Qubit Stability</h2>
+              <a class="arrowed_button cta" onmouseover="handleMouseOver(2)" onmouseleave="handleMouseLeave()">
+                <span>Read More </span>
+                <span class="material-icons">north_east</span>
+              </a>
+            </div>
+          </div>
+          <div class="news_cards" href="">
+            <div class="news_card_thumbnail" style="background-image: url('https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+            <div class="news_cards_content">
+              <p class="news_cards_publishing_date">
+                Published on <span>July 12<sup>th</sup> 2023</span>
+              </p>
+              <h2 class="news_cards_headline">Quantum Computing Breakthrough: Researchers Achieve Record-Breaking Qubit Stability</h2>
+              <a class="arrowed_button cta" onmouseover="handleMouseOver(2)" onmouseleave="handleMouseLeave()">
+                <span>Read More </span>
+                <span class="material-icons">north_east</span>
+              </a>
+            </div>
+          </div>
+          <div class="news_cards" href="">
+            <div class="news_card_thumbnail" style="background-image: url('https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+            <div class="news_cards_content">
+              <p class="news_cards_publishing_date">
+                Published on <span>July 12<sup>th</sup> 2023</span>
+              </p>
+              <h2 class="news_cards_headline">Quantum Computing Breakthrough: Researchers Achieve Record-Breaking Qubit Stability</h2>
+              <a class="arrowed_button cta" onmouseover="handleMouseOver(2)" onmouseleave="handleMouseLeave()">
+                <span>Read More </span>
+                <span class="material-icons">north_east</span>
+              </a>
+            </div>
+          </div>
+          <div class="news_cards" href="">
+            <div class="news_card_thumbnail" style="background-image: url('https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+            <div class="news_cards_content">
+              <p class="news_cards_publishing_date">
+                Published on <span>July 12<sup>th</sup> 2023</span>
+              </p>
+              <h2 class="news_cards_headline">Quantum Computing Breakthrough: Researchers Achieve Record-Breaking Qubit Stability</h2>
+              <a class="arrowed_button cta" onmouseover="handleMouseOver(2)" onmouseleave="handleMouseLeave()">
+                <span>Read More </span>
+                <span class="material-icons">north_east</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews_section">
+        <div class="review_section_image" style="background-image: url('https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=600')"></div>
+        <div class="review_section_content">
+          <a href="#" class="section_title review_section_title" onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+            <i class="material-icons">north_east</i>
+            <span>Reviews</span>
+          </a>
+          <div class="review_section_details">
+            <h1 class="review_section_headline">Unveiling the Next-Gen MacBook: A Leap Forward or a Missed Mark?</h1>
+            <p class="review_section_description">
+              Apple's highly anticipated next-generation MacBook has finally arrived, promising an array of innovative features and improvements. In this review, we dive deep into the new MacBook to uncover whether it lives up to the high
+              expectations or falls short of being a groundbreaking addition to the lineup.
+            </p>
+            <a class="arrowed_button cta" onmouseover="handleMouseOver(2)" onmouseleave="handleMouseLeave()">
+              <span>Read More </span>
+              <span class="material-icons">north_east</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog_section">
+        <a href="#" class="section_title blog_section_title" onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+          <i class="material-icons">north_east</i>
+          <span>Blog</span>
+        </a>
+        <div class="blog_columns_container">
+          <div class="blog_column">
+            <div class="blog_column_thumbnail" style="background-image: url('https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&w=600')"></div>
+            <div class="blog_column_content">
+              <p class="blog_column_headline">Unveiling the Next-Gen MacBook: A Leap Forward or a Missed Mark?</p>
+              <p class="blog_column_description">
+                Apple's highly anticipated next-generation MacBook has finally arrived, promising an array of innovative features and improvements. In this review, we dive deep into the new MacBook to uncover whether it lives up to the high
+                expectations or falls short of being a groundbreaking addition to the lineup.
+              </p>
+              <a class="arrowed_button cta" onmouseover="handleMouseOver(2)" onmouseleave="handleMouseLeave()">
+                <span>Read More </span>
+                <span class="material-icons">north_east</span>
+              </a>
+            </div>
+          </div>
+          <div class="blog_column">
+            <div class="blog_column_thumbnail" style="background-image: url('https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&w=600')"></div>
+            <div class="blog_column_content">
+              <p class="blog_column_headline">Unveiling the Next-Gen MacBook: A Leap Forward or a Missed Mark?</p>
+              <p class="blog_column_description">
+                Apple's highly anticipated next-generation MacBook has finally arrived, promising an array of innovative features and improvements. In this review, we dive deep into the new MacBook to uncover whether it lives up to the high
+                expectations or falls short of being a groundbreaking addition to the lineup.
+              </p>
+              <a class="arrowed_button cta" onmouseover="handleMouseOver(2)" onmouseleave="handleMouseLeave()">
+                <span>Read More </span>
+                <span class="material-icons">north_east</span>
+              </a>
+            </div>
+          </div>
+          <div class="blog_column">
+            <div class="blog_column_thumbnail" style="background-image: url('https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&w=600')"></div>
+            <div class="blog_column_content">
+              <p class="blog_column_headline">Unveiling the Next-Gen MacBook: A Leap Forward or a Missed Mark?</p>
+              <p class="blog_column_description">
+                Apple's highly anticipated next-generation MacBook has finally arrived, promising an array of innovative features and improvements. In this review, we dive deep into the new MacBook to uncover whether it lives up to the high
+                expectations or falls short of being a groundbreaking addition to the lineup.
+              </p>
+              <a class="arrowed_button cta" onmouseover="handleMouseOver(2)" onmouseleave="handleMouseLeave()">
+                <span>Read More </span>
+                <span class="material-icons">north_east</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter_section">
+        <p class="newsletter_section_subheading">Sign up for our newsletter</p>
+        <p class="newsletter_section_heading">Get the Latest Tech News, Reviews, and Insights Delivered Straight to Your Inbox</p>
+        <form action="" class="newsletter_form">
+          <input type="email" name="newsletter_email" class="newsletter_email_input" id="" required placeholder="JohnDoe@example.com" />
+          <input type="submit" class="newsletter_signup_button" value="Sign Up" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_grid">
+        <a href="#" onmouseover="handleMouseOver(3)" onmouseleave="handleMouseLeave()">
+          <img src="Assets/Images/Logo and name.svg" alt="" />
+        </a>
+        <p class="footer_copyright">&copy; 2023 - 2023 www.Techioneers.com</p>
+        <p class="footer_newsletter_heading">Sign up for our newslettter</p>
+        <div class="footer_form_container">
+          <form action="" class="newsletter_form">
+            <input type="email" name="newsletter_email" class="newsletter_email_input" id="" required placeholder="JohnDoe@example.com" />
+            <input type="submit" class="newsletter_signup_button" value="Sign Up" />
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".hero_section", {
+      scrollTrigger: {
+        scrub: 0.8,
+      },
+      y: 700,
+      scale: 0.5,
+      opacity: -3,
+    });
+
+    const mobileHeaderMenu = document.querySelector(".mobile_header_menu");
+    const mobileHeaderIcon = document.querySelector(".mobile_header_icon_container i");
+    const mobileMenuContainer = document.querySelector(".mobile_menu_container");
+    const listItems = document.querySelectorAll(".mobile_menu_container ul li");
+    const mobileMenuHr = document.querySelector(".mobile_menu_container hr");
+    const mobileSocialMedias = document.querySelectorAll(".mobile_menu_social_media_icons a");
+    let mobileHeaderStatus = false;
+
+    function toggleMobileMenu() {
+      if (mobileHeaderStatus) {
+        hideMobileMenu();
+      } else {
+        showMobileMenu();
+      }
+      mobileHeaderStatus = !mobileHeaderStatus;
+    }
+
+    function showMobileMenu() {
+      mobileHeaderMenu.classList.add("mobile_header_menu_flipped");
+      mobileHeaderIcon.innerText = "close";
+      mobileMenuContainer.style.display = "flex";
+
+      gsap.to(listItems, {
+        opacity: 1,
+        y: 10,
+        stagger: 0.07,
+        ease: "power2.inOut",
+      });
+
+      gsap.to(mobileSocialMedias, {
+        opacity: 1,
+        y: 10,
+        stagger: 0.1,
+        duration: 0.5,
+        delay: 0.5,
+        ease: "power2.inOut",
+      });
+
+      setTimeout(() => {
+        gsap.to(mobileMenuHr, {
+          opacity: 1,
+          y: 10,
+          duration: 0.1,
+        });
+      }, 400);
+    }
+
+    function hideMobileMenu() {
+      mobileHeaderMenu.classList.remove("mobile_header_menu_flipped");
+      mobileHeaderIcon.innerText = "menu";
+      mobileMenuContainer.style.display = "none";
+
+      gsap.to(mobileSocialMedias, {
+        opacity: 0,
+        y: 0,
+        duration: 0.3,
+      });
+
+      gsap.to(listItems, {
+        opacity: 0,
+        y: 0,
+        duration: 0.3,
+      });
+
+      gsap.to(mobileMenuHr, {
+        opacity: 0,
+        y: 0,
+        duration: 0.3,
+      });
+    }
+
+    mobileHeaderIcon.addEventListener("click", toggleMobileMenu);
+
+    const tl = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".news_grid",
+          scrub: true,
+          start: "top 600vh",
+          end: "bottom 700vh",
+        },
+      })
+      .to(".news_cards", {
+        stagger: 0.5,
+        y: -100,
+        scale: 1,
+        scrub: true,
+      });
+
+    const viewportWidth = window.innerWidth;
+    const reviewSection = document.querySelector(".reviews_section");
+    const referenceNode = reviewSection.firstChild;
+    const reviewSectionTitle = document.querySelector(".review_section_title");
+    console.log("width is " + viewportWidth);
+    if (viewportWidth <= 750) {
+      reviewSection.insertBefore(reviewSectionTitle, referenceNode);
+      console.log("nigger");
+    }
+  </script>
+  <script src="js/cursorScript.js"></script>
+</html>
