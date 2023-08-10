@@ -669,6 +669,9 @@ footer .newsletter_email_input {
 
 /*============= MOBILE ============*/
 @media (max-width: 750px) {
+  .note {
+    display: none;
+  }
   .widescreen {
     display: none;
   }
