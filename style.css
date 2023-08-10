@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@300;400&display=swap");
 
 :root {
   --primary: #0e0d1f;
@@ -528,10 +528,13 @@ main {
 .blog_column_headline {
   font-size: var(--32);
   line-height: 1;
+  font-family: var(--roboto);
+  font-weight: 400 !important;
 }
 
 .blog_column_description {
   opacity: 0.8;
+  font-weight: 300;
 }
 
 /*====================== NEWSLETTER SECTION ==============*/
@@ -706,6 +709,7 @@ footer .newsletter_email_input {
   }
   .news_cards_headline {
     font-size: var(--20);
+    font-weight: 300;
   }
   .news_cards .arrowed_button span {
     font-size: var(--16);
