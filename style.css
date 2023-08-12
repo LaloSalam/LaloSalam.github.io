@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@300;400&display=swap");
 
 :root {
-  --primary: #0e0d1f;
-  --darker-primary: #080715;
+  --primary: #080622;
+  --darker-primary: #040312;
   --secondary: #eaeaea;
 
   --roboto: "Roboto Condensed";
@@ -22,6 +22,7 @@
   width: 100%;
   text-align: center;
   padding: 4px 0;
+  position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -100,6 +101,25 @@ a {
   font-size: calc(var(--20)-2) !important;
 }
 
+.glowers {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.first_moving_svg {
+  position: absolute;
+  bottom: -50%;
+  right: 4%;
+}
+
+.second_moving_svg {
+  position: absolute;
+}
+
 /* ================ HEADER SECTION ==================*/
 header {
   display: flex;
@@ -114,6 +134,8 @@ header {
   align-items: center;
   height: 100%;
   width: 33.3%;
+  z-index: 2;
+  position: relative;
 }
 
 .header_logo_and_name img {
@@ -126,6 +148,8 @@ nav {
   justify-content: center;
   height: 100%;
   width: 33.3%;
+  z-index: 2;
+  position: relative;
 }
 
 nav ul {
@@ -148,6 +172,8 @@ nav ul li a {
   height: 100%;
   width: 33.3%;
   gap: 28px;
+  z-index: 2;
+  position: relative;
 }
 
 .header_social_media_icons a i {
@@ -250,10 +276,26 @@ nav ul li a {
   font-size: var(--32);
 }
 
+.glass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
+  z-index: 1;
+}
+
 /*====================== MAIN ===========================*/
 main {
   padding: 0 96px;
   margin: 0 8.88vw;
+  z-index: 2;
+  position: relative;
 }
 
 /*====================== HERO SECTION ===================*/
@@ -286,7 +328,7 @@ main {
 /*======================= FEATURED SECTION ==============*/
 .featured_section {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/10;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -377,12 +419,20 @@ main {
   height: 100%;
   width: 100%;
   background: rgb(8, 7, 21);
-  background: linear-gradient(0deg, rgba(8, 7, 21, 0.7) 0%, rgba(8, 7, 21, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(8, 7, 21, 0.7) 0%,
+    rgba(8, 7, 21, 0) 100%
+  );
 }
 
 .featured_shadow_inverse {
   background: rgb(8, 7, 21);
-  background: linear-gradient(0deg, rgba(8, 7, 21, 0) 0%, rgba(8, 7, 21, 0.3) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(8, 7, 21, 0) 0%,
+    rgba(8, 7, 21, 0.3) 100%
+  );
 }
 /*====================== NEWS SECTION ====================*/
 
@@ -413,6 +463,10 @@ main {
   position: relative;
   top: 100px;
   transform: scale(0.9);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
 }
 
 .news_card_thumbnail {
@@ -431,6 +485,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  padding: 16px;
 }
 
 .news_cards_publishing_date {
@@ -449,7 +504,9 @@ main {
   width: 100%;
   margin: 64px 0;
   display: flex;
-  gap: 2%;
+  position: relative;
+  transition: all 0.3s ease;
+  transform: scale(0.9);
 }
 
 .review_section_image {
@@ -466,6 +523,12 @@ main {
   align-items: flex-start;
   flex-direction: column;
   gap: 40px;
+  padding: 16px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
 }
 
 .review_section_details {
@@ -502,9 +565,16 @@ main {
 
 .blog_column {
   width: 100%;
-  height: 250px;
   display: flex;
-  gap: 10px;
+  justify-content: flex-end;
+  height: fit-content;
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
+  transform: scale(0.9);
+  transition: all 0.3s ease;
 }
 
 .blog_column_thumbnail {
@@ -513,6 +583,8 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
+  left: 0;
 }
 
 .blog_column_content {
@@ -523,6 +595,7 @@ main {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 16px;
+  padding: 16px;
 }
 
 .blog_column_headline {
@@ -539,7 +612,7 @@ main {
 
 /*====================== NEWSLETTER SECTION ==============*/
 .newsletter_section {
-  margin: 64px 0;
+  margin: 128px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -593,6 +666,8 @@ footer {
   margin: 64px 0 0 0;
   padding: 64px 8.88vw;
   background-color: var(--darker-primary);
+  position: relative;
+  z-index: 2;
 }
 
 .footer_grid {
@@ -672,6 +747,14 @@ footer .newsletter_email_input {
 
 /*============= MOBILE ============*/
 @media (max-width: 750px) {
+  .first_moving_svg {
+    bottom: unset;
+    right: unset;
+    left: 0px;
+    bottom: 100px;
+    height: 300px;
+    width: auto;
+  }
   .note {
     display: none;
   }
@@ -716,11 +799,16 @@ footer .newsletter_email_input {
   }
   .reviews_section {
     flex-direction: column;
-    height: 85vh;
+    height: fit-content;
+    margin: 0;
+    overflow: hidden;
+  }
+  .review_section_title {
+    margin-bottom: 16px;
   }
   .review_section_content {
     width: 100%;
-    height: 20%;
+    height: fit-content;
   }
   .review_section_headline {
     font-size: var(--32);
@@ -730,17 +818,19 @@ footer .newsletter_email_input {
   }
   .review_section_image {
     width: 100%;
-    height: 65%;
+    height: 45vh;
     aspect-ratio: unset;
   }
   .blog_column {
     flex-direction: column;
     height: unset;
-    gap: 15px;
+    position: static;
+    justify-content: unset;
   }
   .blog_column_thumbnail {
     width: 100%;
     aspect-ratio: 16/9;
+    position: static;
   }
   .blog_column_content {
     width: 100%;
@@ -748,7 +838,6 @@ footer .newsletter_email_input {
   .blog_column_headline {
     font-size: var(--20);
     font-weight: 600;
-    line-height: 1.3;
   }
   .blog_column_description {
     font-size: var(--16);
@@ -800,6 +889,6 @@ footer .newsletter_email_input {
     padding: 0;
   }
   .hero_section h1 {
-    font-size: var(--32);
+    font-size: var(--48);
   }
 }
